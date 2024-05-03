@@ -150,15 +150,17 @@ const AddProduct = () => {
               sx={{ width: "100%" }}
             />
           </div>
-          <div className="m-3 w-50">
-            <Button
-              variant="contained"
-              color="secondary"
-              onClick={() => removeSizeField(index)}
-            >
-              Remove
-            </Button>
-          </div>
+          {formData.sizes.length > 1 && (
+            <div className="m-3 w-50">
+              <Button
+                variant="contained"
+                color="secondary"
+                onClick={() => removeSizeField(index)}
+              >
+                Remove
+              </Button>
+            </div>
+          )}
         </div>
       ))}
       <div className="m-3 w-50">

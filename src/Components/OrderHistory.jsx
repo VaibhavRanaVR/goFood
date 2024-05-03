@@ -37,7 +37,7 @@ const OrderHistory = () => {
   }, [navigate]);
 
   return (
-    <div>
+    <div style={{ paddingBottom: "50px" }}>
       <h2 style={{ marginLeft: "20px" }}>Order History</h2>
       {loading ? (
         <p>Loading...</p>

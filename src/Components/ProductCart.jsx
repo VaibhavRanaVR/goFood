@@ -51,7 +51,7 @@ const ProductCard = ({ productData }) => {
       </div>
       <div className="product-info">
         <h3>{productData.name}</h3>
-        <p>{productData.description}</p>
+        <p className="product-description">{productData.description}</p>
       </div>
       <div className="product-selection">
         {productData.prices.map((price) => (

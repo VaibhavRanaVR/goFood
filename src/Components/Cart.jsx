@@ -100,11 +100,9 @@ const Cart = () => {
                 <h5 className="item-name">{item.product.name}</h5>
                 <p className="item-price">
                   Price: ₹
-                  {
-                    item.product.prices.find(
-                      (price) => price._id === item.selected_size
-                    ).price
-                  }
+                  {(item.product.prices.find(
+                    (price) => price._id === item.selected_size
+                  ).price * item.quantity).toFixed(2)}
                 </p>
                 <div className="size-dropdown">
                   <select

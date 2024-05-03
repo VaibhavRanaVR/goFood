@@ -86,4 +86,11 @@
   border-top-right-radius: 10px;
   color: white;
 }
-/* Add further styling according to your needs */
+
+.product-description {
+  display: block; 
+  height: 2.8em;
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+}

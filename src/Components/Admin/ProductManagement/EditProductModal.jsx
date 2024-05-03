@@ -143,14 +143,16 @@ const EditProductModal = ({ open, handleClose, data }) => {
               onChange={(e) => handleChange(e, index)}
               variant="standard"
             />
-            <Button
-              variant="contained"
-              color="secondary"
-              onClick={() => removePriceField(index)}
-              style={{ marginLeft: "10px" }}
-            >
-              Remove
-            </Button>
+            {formData.prices.length > 1 && (
+              <Button
+                variant="contained"
+                color="secondary"
+                onClick={() => removePriceField(index)}
+                style={{ marginLeft: "10px" }}
+              >
+                Remove
+              </Button>
+            )}
           </div>
         ))}
         <Button
@@ -175,9 +177,10 @@ const EditProductModal = ({ open, handleClose, data }) => {
         <InputLabel htmlFor="category">Category:</InputLabel>
         <Select
           value={formData.category}
-          onChange={(e) => handleChange(e)}
-          input={<Input id="category" />}
-          sx={{ marginBottom: "20px" }}
+          onChange={(e) =>
+            setFormData({ ...formData, category: e.target.value })
+          }
+          fullWidth
         >
           {categoryList.map((item, index) => (
             <MenuItem value={item._id} key={index}>
@@ -185,7 +188,6 @@ const EditProductModal = ({ open, handleClose, data }) => {
             </MenuItem>
           ))}
         </Select>
-
         <TextField
           required
           name="image"
