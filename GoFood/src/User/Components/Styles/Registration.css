@@ -1,0 +1,94 @@
+.Registration-Container {
+  margin-top: 10px;
+  background-color: #f5f5f5;
+}
+
+.Registration-Content-Container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  width: 100%;
+  margin-left: 50px;
+}
+
+.Registration-Form-Container {
+  padding: 50px;
+  width: 30%;
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.Registration-Form-Container input {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.Registration-Form-Container input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.Registration-Form-Container button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Registration-Form-Container button:hover {
+  background-color: #0056b3;
+}
+
+.Registration-Image-Container {
+  width: 40%;
+}
+
+.Registration-Image-Container img {
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 900px) {
+  .Registration-Form-Container {
+    width: 100%;
+    margin-right: 60px;
+  }
+
+  .Registration-Image-Container {
+    display: none;
+  }
+
+  .middle_section {
+    margin-left: 0px;
+  }
+}
+.checkbox-registration {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.checkbox-registration input {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .Registration-Form-Container {
+    width: 100%;
+    margin-right: 80px;
+  }
+}
