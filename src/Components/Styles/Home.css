@@ -1,0 +1,11 @@
+.Home-Container img{
+    height:"800px";
+    width:"100%";
+}
+@media screen and (max-width: 600px){
+    .Home-Container img{
+        height:"auto";
+        width:"100vw";
+    }
+}
+
