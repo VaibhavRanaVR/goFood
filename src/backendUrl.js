@@ -1,1 +1,1 @@
-export const backendUrl = "http://localhost:5500/api";
+export const backendUrl = "https://gofoodbackend-1m16.onrender.com/api";
